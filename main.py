@@ -14,7 +14,7 @@ import json
 import urllib
 
 # this is used for constructing URLs to google's APIS
-from googleapiclient.discovery import build
+from googleapiclientmaster.discovery import build
 
 JINJA_ENVIRONMENT = jinja2.Environment(
     loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
