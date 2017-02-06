@@ -30,7 +30,8 @@ def page_not_found(e):
     """Return a custom 404 error."""
     return 'Sorry, nothing at this URL.', 404
     
-API_KEY = AIzaSyBFJIMR8IQl2UIUT07gwrfDu4Ifnn1txEA
+TABLE_ID = '1UJoloZuGbQ75LZt6-be6HktjB85WZMpYE2IDj-t_'
+API_KEY = 'AIzaSyBFJIMR8IQl2UIUT07gwrfDu4Ifnn1txEA'
 
 # This uses discovery to create an object that can talk to the 
 # fusion tables API using the developer key
