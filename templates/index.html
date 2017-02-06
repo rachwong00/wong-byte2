@@ -7,3 +7,24 @@
 <h1>Data Pipeline Project Byte Example</h1>
 </body>
 </html>
+
+<div class="table-responsive">
+  <table class="table table-striped table-hover">
+    <thead class="thead-inverse">
+     <tr> 
+{% for item in headers %}
+         <th>{{ item }}</th>
+{% endfor %}
+     </tr>
+    </thead>
+    <tbody>
+{% for row in content %}
+     <tr>
+  {% for datum in row %}
+            <td>{{ datum }} </td>
+  {% endfor %}
+     </tr>
+{% endfor %}
+    </tbody>
+   </table>
+</div> 

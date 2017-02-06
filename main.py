@@ -23,8 +23,8 @@ app.config['DEBUG'] = True
 @app.route('/')
 def hello():
     template = JINJA_ENVIRONMENT.get_template('templates/index.html')
-    return template.render()
-
+    return template.render(headers=cols, content=rows)
+    
 @app.errorhandler(404)
 def page_not_found(e):
     """Return a custom 404 error."""
