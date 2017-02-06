@@ -36,3 +36,8 @@ API_KEY = 'AIzaSyBFJIMR8IQl2UIUT07gwrfDu4Ifnn1txEA'
 # This uses discovery to create an object that can talk to the 
 # fusion tables API using the developer key
 service = build('fusiontables', 'v1', developerKey=API_KEY)
+
+
+request = service.column().list(tableId=TABLE_ID) 
+
+response = request.execute()
