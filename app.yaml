@@ -26,6 +26,6 @@ libraries:
 - name: markupsafe
   version: "0.15"
 -  name: ssl
-  version: lates 
+  version: latest 
 - name: webapp2
   version: latest
