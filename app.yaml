@@ -2,6 +2,23 @@ runtime: python27
 api_version: 1
 threadsafe: yes
 
+# Handlers define how to route requests to your application.
+handlers:
+- url: /js
+  static_dir: js
+  application_readable: true
+- url: /fonts
+  static_dir: fonts
+  application_readable: true
+- url: /css
+  static_dir: css
+  application_readable: true
+- url: /templates
+  static_dir: templates
+  application_readable: true
+- url: .*
+  script: main.app
+
 handlers:
 - url: .*
   script: main.app
@@ -11,3 +28,9 @@ libraries:
   version: "2.6"
 - name: markupsafe
   version: "0.15"
+
+-  name: ssl
+  version: latest
+   
+- name: webapp2
+  version: latest
